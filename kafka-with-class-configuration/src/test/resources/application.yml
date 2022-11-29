@@ -1,0 +1,9 @@
+spring:
+  kafka:
+    bootstrap-servers: ${embedded.kafka.brokerList}
+    producer:
+      bootstrap-servers: ${embedded.kafka.brokerList}
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer:  org.springframework.kafka.support.serializer.JsonSerializer
+
+test.spring.kafka.producer.topic-name: data_readiness

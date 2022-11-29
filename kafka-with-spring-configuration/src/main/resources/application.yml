@@ -1,0 +1,11 @@
+spring:
+  kafka:
+    bootstrap-servers: #kafka-bootstrap-servers
+    producer:
+      bootstrap-servers: #kafka-bootstrap-servers
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer:  org.springframework.kafka.support.serializer.JsonSerializer
+
+
+notification:
+  topic: #topic
